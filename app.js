@@ -40,7 +40,7 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-//by using the unshift 
+//by using the unshift method I am adding to the beginning of the foods array
 foods.unshift('taco')
 
 console.log('Exercise 3 result:', foods);
@@ -56,6 +56,8 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
+//I am creating a new variable called favFood and assigining it the value of the [1] index
+//from the foods array
 const favFood = foods[1]
 
 console.log('Exercise 4 result:', favFood);
@@ -69,6 +71,8 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 
+//by using the splice method and indicating '2' as the starting point and '0' as the end point
+//tofu is inserted at index [2] and nothing is extracted.
 foods.splice(2, 0, 'tofu')
 
 
@@ -83,6 +87,9 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
+
+//by indicating 1 as the start and stop point I can enter both 'sushi and 'cupcake' at the [1]
+//index and remove the item that was previously there as well 'pizza'.
 foods.splice(1,1, 'sushi','cupcake' )
 
 console.log('Exercise 6 result:', foods);
@@ -99,6 +106,8 @@ Exercise 7: Using the `slice()` method
 Complete Exercise 7 in the space below:
 */
 
+//I am creating a variable called 'yummy' and assigning it the value of items at the [1] and [2]
+//index of the foods list. [3] is not non-inclusive.
 const yummy = foods.slice(1, 3)
 
 console.log('Exercise 7 result:', yummy);
@@ -115,9 +124,29 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
+//I am creating an variabl called soyIdx and assigning it the value of the index of 'tofu'
+//from the 'foods array
 soyIdx = foods.indexOf('tofu')
-
 
 console.log('Exercise 8 result:', soyIdx);
 
 
+/*
+Exercise 9: Joining elements
+
+1) Use the `join()` method to concatenate the strings in the `foods` array, 
+   separated by ' -> '. 
+
+2) Assign the result to a variable called `allFoods`. 
+
+Note: The final result should log as:
+'taco -> sushi -> cupcake -> tofu -> cheeseburger'
+
+Complete Exercise 9 in the space below:
+*/
+
+//I am creating a variable called allFoods which contains all of the items from the 'foods' array
+//seperated by '->'
+allFoods = foods.join('->') 
+
+console.log('Exercise 9 result:', allFoods);
