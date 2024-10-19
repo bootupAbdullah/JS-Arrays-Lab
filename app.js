@@ -6,6 +6,7 @@ Exercise 1: Define an empty array
 Exercise 1 has been completed for you:
 */
 
+// I am creating a varaible that holds an array, creating an empty list
 const foods = [];  
 
 console.log('Exercise 1 result:', foods);
@@ -21,6 +22,9 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 
+
+//I am adding first the item pizza and then cheeseburger to the list I
+//created by using the push methods.
 foods.push('pizza', 'cheeseburger')
 
 
@@ -36,6 +40,7 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
+//by using the unshift 
 foods.unshift('taco')
 
 console.log('Exercise 3 result:', foods);
@@ -97,3 +102,22 @@ Complete Exercise 7 in the space below:
 const yummy = foods.slice(1, 3)
 
 console.log('Exercise 7 result:', yummy);
+
+
+/*
+Exercise 8: Finding an index
+
+1) Using the `indexOf()` method, find the index of the string 'tofu' in the 
+   `foods` array. 
+
+2) Assign it to a variable named `soyIdx`.
+
+Complete Exercise 8 in the space below:
+*/
+
+soyIdx = foods.indexOf('tofu')
+
+
+console.log('Exercise 8 result:', soyIdx);
+
+
