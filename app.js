@@ -162,6 +162,11 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
+
+//I've created a variable called hasSoup' which holds the result of the method 'includes' being called
+//on the array 'foods' to see if the item 'soup' is conatined within the array.
 hasSoup = foods.includes('soup')
 
 console.log('Exercise 10 result:', hasSoup);
+
+
