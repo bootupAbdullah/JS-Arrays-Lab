@@ -187,22 +187,16 @@ Complete Exercise 11 in the space below:
 */
 
 
-//* earlier example of the 'push' method:
-// foods.push('pizza', 'cheeseburger')
 
-
-// console.log('Exercise 2 result:', foods);
-
-
-
-
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
 //for...in loop gives us acess to the properties 
 
-//for..of creates a new variable for every element in our array 
+// for..of creates a new variable for every element in our array 
 // gives acess to the values instead of the properties
 
+//!! for..of
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 let odds = []
 for (const num of nums) {
     if (num % 2 === 1) {
@@ -215,6 +209,30 @@ console.log('Exercise 11 result:', odds)
 // console.log(89 % 2)
 
 
+//!! for loop
+// for (let i = 0; i < nums.length; i++) {
+//    odds.push(i)
+// }
+
+// console.log(odds)
+
+
+//!! for...in
+
+// for (let i in nums) {
+//    odds.push(i)
+// }
+
+// log(odds)
 
 
 
+
+
+
+
+
+
+
+
+ 
