@@ -1,5 +1,9 @@
+
+//creating shorthand for 'console.log)
+const log = console.log
+
 /*
-Exercise 1: Define an empty array
+! Exercise 1: Define an empty array
 
 1) Create an empty array and assign it to a variable called `foods`.
 
@@ -13,7 +17,7 @@ console.log('Exercise 1 result:', foods);
 
 
 /*
-Exercise 2: Add strings to the array
+! Exercise 2: Add strings to the array
 
 1) Add 'pizza' and 'cheeseburger' to the `foods` array. 
 
@@ -23,7 +27,7 @@ Complete Exercise 2 in the space below:
 */
 
 
-//I am adding first the item pizza and then cheeseburger to the list I
+//I am adding first the item 'pizza' and then 'cheeseburger' to the list I
 //created by using the push methods.
 foods.push('pizza', 'cheeseburger')
 
@@ -33,7 +37,7 @@ console.log('Exercise 2 result:', foods);
 
 
 /*
-Exercise 3: Insert at the beginning
+! Exercise 3: Insert at the beginning
 
 1) Insert the string 'taco' at the beginning of the `foods` array.
 
@@ -46,7 +50,7 @@ foods.unshift('taco')
 console.log('Exercise 3 result:', foods);
 
 /*
-Exercise 4: Access an array element
+! Exercise 4: Access an array element
 
 1) Retrieve the 'pizza' string from the array based on its position (index) in
    the array.  
@@ -64,7 +68,7 @@ console.log('Exercise 4 result:', favFood);
 
 
 /*
-Exercise 5: Insert an element between two others
+! Exercise 5: Insert an element between two others
 
 1) Insert the string 'tofu' between 'pizza' and 'cheeseburger' in the array.
 
@@ -80,7 +84,7 @@ console.log('Exercise 5 result:', foods);
 
 
 /*
-Exercise 6: Replace elements
+! Exercise 6: Replace elements
 
 1) Replace 'pizza' in the `foods` array with 'sushi' and 'cupcake'.
 
@@ -96,7 +100,7 @@ console.log('Exercise 6 result:', foods);
 
 
 /*
-Exercise 7: Using the `slice()` method
+! Exercise 7: Using the `slice()` method
 
 1) Use the `slice()` method to create a new array that contains 'sushi' and 
    'cupcake'.
@@ -114,7 +118,7 @@ console.log('Exercise 7 result:', yummy);
 
 
 /*
-Exercise 8: Finding an index
+! Exercise 8: Finding an index
 
 1) Using the `indexOf()` method, find the index of the string 'tofu' in the 
    `foods` array. 
@@ -132,7 +136,7 @@ console.log('Exercise 8 result:', soyIdx);
 
 
 /*
-Exercise 9: Joining elements
+! Exercise 9: Joining elements
 
 1) Use the `join()` method to concatenate the strings in the `foods` array, 
    separated by ' -> '. 
@@ -152,7 +156,7 @@ allFoods = foods.join('->')
 console.log('Exercise 9 result:', allFoods);
 
 /*
-Exercise 10: Check for an element
+! Exercise 10: Check for an element
 
 1) Using the .includes() method, check if the `foods` array contains the string
    'soup'.
@@ -168,5 +172,49 @@ Complete Exercise 10 in the space below:
 hasSoup = foods.includes('soup')
 
 console.log('Exercise 10 result:', hasSoup);
+
+
+/*
+! Exercise 11: Odd numbers from an array
+
+1) Choose a method to iterate through the `nums` array.
+
+2) Push each odd number to a new array named `odds`.
+
+Hint: Initialize the `odds` variable to an empty array before the iteration.
+
+Complete Exercise 11 in the space below:
+*/
+
+
+//* earlier example of the 'push' method:
+// foods.push('pizza', 'cheeseburger')
+
+
+// console.log('Exercise 2 result:', foods);
+
+
+
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+
+//for...in loop gives us acess to the properties 
+
+//for..of creates a new variable for every element in our array 
+// gives acess to the values instead of the properties
+
+let odds = []
+for (const num of nums) {
+    if (num % 2 === 1) {
+      odds.push(num)
+    }
+}
+
+console.log('Exercise 11 result:', odds)
+
+// console.log(89 % 2)
+
+
+
 
 
