@@ -244,11 +244,36 @@ Exercise 12: FizzBuzz with arrays
 Complete Exercise 12 in the space below:
 */
 
+// let fizz = []
+// let buzz = []
+// let fizzbuzz = []
 
-console.log('Exercise 12 Results:');
-console.log('  fizz:', fizz);
-console.log('  buzz:', buzz);
-console.log('  fizzbuzz:', fizzbuzz);
+// for(num in nums) {
+//    if (num / 3 === 0 && num / 5 === 0 ) {
+//       fizzbuzz.push(num) 
+//    } if (num / 3 === 0) {
+//       fizz.push(num)
+//    } if (num / 5 === 0) {
+//       buzz.push(num)
+//    }
+
+//    console.log('Exercise 12 Results:');
+//    console.log('  fizz:', fizz);
+//    console.log('  buzz:', buzz);
+//    console.log('  fizzbuzz:', fizzbuzz);
+// }
+
+
+num2 = [4]
+num3 = []
+for(const num in num2) {
+   if(num % 2 === 0){
+      console.log('check')
+      num3.push(num)
+      console.log(num3)
+   }
+}
+
 
 
 
